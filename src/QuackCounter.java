@@ -1,6 +1,10 @@
 /**
  * QuackCounter
  */
+/**
+ * Thanawat Potidet
+ * 6510450445
+ */
 public class QuackCounter implements Quackable{
   Quackable duck;
   static int numberQuacks;

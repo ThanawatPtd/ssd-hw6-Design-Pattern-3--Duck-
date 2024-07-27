@@ -1,6 +1,10 @@
 /**
  * QuackAdaptor
  */
+/**
+ * Thanawat Potidet
+ * 6510450445
+ */
 public class QuackAdaptor implements Quackable{
   private Goose goose;
 

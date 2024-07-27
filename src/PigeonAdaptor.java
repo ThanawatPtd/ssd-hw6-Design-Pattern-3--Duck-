@@ -1,6 +1,10 @@
 /**
  * PigeonAdaptor
  */
+/**
+ * Thanawat Potidet
+ * 6510450445
+ */
 public class PigeonAdaptor implements Quackable {
   Pigeon pigeon;
 

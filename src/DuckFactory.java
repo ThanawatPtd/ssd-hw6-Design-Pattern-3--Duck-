@@ -1,6 +1,10 @@
 /**
  * DuckFactory
  */
+/**
+ * Thanawat Potidet
+ * 6510450445
+ */
 public class DuckFactory extends AbstractDuckFactory{
   @Override
   public Quackable createMallardDuck() {

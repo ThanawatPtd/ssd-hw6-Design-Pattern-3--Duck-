@@ -1,6 +1,10 @@
 /**
  * PoliteAndCountingDuckFactory
  */
+/**
+ * Thanawat Potidet
+ * 6510450445
+ */
 public class PoliteAndCountingDuckFactory extends AbstractDuckFactory{
   @Override
   public Quackable createDuckCall() {

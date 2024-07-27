@@ -4,6 +4,10 @@ import java.util.Iterator;
 /**
  * Flock
  */
+/**
+ * Thanawat Potidet
+ * 6510450445
+ */
 public class Flock implements Quackable {
   ArrayList<Quackable> quackers = new ArrayList<Quackable>();
 
