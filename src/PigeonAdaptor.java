@@ -17,5 +17,9 @@ public class PigeonAdaptor implements Quackable {
     pigeon.coo();
     pigeon.coo();
   }
-
+  
+  @Override
+  public boolean isPolite() {
+    return false;
+  }
 }

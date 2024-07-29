@@ -11,8 +11,29 @@ public class DuckSimulator {
     AbstractDuckFactory duckFactory = new DuckFactory();
     AbstractDuckFactory duckCountFactory = new CountingDuckFactory();
     AbstractDuckFactory duckCountPoliteFactory = new PoliteAndCountingDuckFactory();
-    duckSimulator.simulate(duckCountPoliteFactory);
+//    duckSimulator.simulate(duckCountPoliteFactory);
+    duckSimulator.simualte();
   }
+  
+  void simualte(){
+    Quackable mallardDuck = new QuackCounter(new Polite(new MallardDuck()));
+    Quackable redheadDuck = new QuackCounter(new Polite(new RedheadDuck()));
+    Quackable duckCall = new QuackCounter(new Polite(new DuckCall()));
+    Quackable rubberDuck = new QuackCounter(new Polite(new RubberDuck()));
+
+    Quackable duckCall2 = new Polite(new QuackCounter(new DuckCall()));
+    
+    simulater(mallardDuck);
+    simulater(redheadDuck);
+    simulater(duckCall2);
+    simulater(duckCall);
+    simulater(rubberDuck);
+
+    System.out.println("The duck quacked " + QuackCounter.getQuacks() + " times");
+    System.out.println("The duck polite quacked " + QuackCounter.getPoliteQuacks() + " times");
+
+  }
+
 
   void simulate(AbstractDuckFactory duckFactory) {
     Quackable mallardDuck = duckFactory.createMallardDuck();
@@ -42,6 +63,9 @@ public class DuckSimulator {
   }
 
   void simulate(Quackable duck) {
+    duck.quack();
+  }
+  public void simulater(Quackable duck) {
     duck.quack();
   }
 }

@@ -17,5 +17,8 @@ public class QuackAdaptor implements Quackable{
     goose.honk();
     
   }
-  
+  @Override
+  public boolean isPolite() {
+    return false;
+  } 
 }

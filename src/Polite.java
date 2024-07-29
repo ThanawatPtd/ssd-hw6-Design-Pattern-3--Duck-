@@ -18,5 +18,9 @@ public class Polite implements Quackable{
     System.out.println("Kub");
   }
   
+  @Override
+  public boolean isPolite() {
+    return true;
+  }
 
 }

@@ -26,5 +26,9 @@ public class Flock implements Quackable {
       quackers.get(i).quack();
     }
   }
-
+  
+  @Override
+  public boolean isPolite() {
+    return false;
+  }
 }
